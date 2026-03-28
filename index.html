@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Lynk</title>
+</head>
+<body>
+    <div class="app">
+        <header class="topbar">
+            <div class="brand">Lynk</div>
+            <div class="status-wrap">
+                <div class="status"><span id="statusDot" class="dot"></span><span id="connectionStatus">Disconnected</span></div>
+                <div>Users online: <strong id="onlineCount">0</strong></div>
+            </div>
+        </header>
+
+        <main class="main">
+            <aside class="sidebar">
+                <h2 class="sidebar-title">Connected Users</h2>
+                <ul id="usersList" class="users"></ul>
+            </aside>
+
+            <section class="chat-area">
+                <div id="messages" class="messages"></div>
+
+                <div class="composer">
+                    <input id="messageInput" type="text" placeholder="Type a message..." autocomplete="off">
+                    <button id="sendButton" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-send-icon lucide-send"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+                    </button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="assets/app.js"></script>
+
+</body>
+</html>
